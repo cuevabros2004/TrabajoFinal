@@ -1,0 +1,9 @@
+{"level":40,"time":1681499849966,"pid":5844,"hostname":"DESKTOP-492C8BG","msg":"No hay un usuario logueado"}
+{"level":40,"time":1681500153996,"pid":5844,"hostname":"DESKTOP-492C8BG","msg":"No hay un usuario logueado"}
+{"level":40,"time":1681500279221,"pid":5844,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
+{"level":40,"time":1681500399101,"pid":5844,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
+{"level":40,"time":1681500506763,"pid":5844,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
+{"level":40,"time":1681500580258,"pid":14560,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
+{"level":40,"time":1681501226521,"pid":14560,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
+{"level":40,"time":1681501348779,"pid":14560,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
+{"level":50,"time":1681582131227,"pid":14040,"hostname":"DESKTOP-492C8BG","msg":"Products.listarProductoPorId is not a function"}
