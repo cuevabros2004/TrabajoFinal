@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/"
   },
-  "homepage": "https://github.com/cuevabros2004/TercerEntregaFinal.git#readme",
+  "homepage": "https://github.com/cuevabros2004/TrabajoFinal.git#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
