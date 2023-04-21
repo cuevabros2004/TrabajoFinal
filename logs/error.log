@@ -7,3 +7,17 @@
 {"level":40,"time":1681501226521,"pid":14560,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
 {"level":40,"time":1681501348779,"pid":14560,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
 {"level":50,"time":1681582131227,"pid":14040,"hostname":"DESKTOP-492C8BG","msg":"Products.listarProductoPorId is not a function"}
+{"level":50,"time":1682029252234,"pid":9308,"hostname":"DESKTOP-492C8BG","msg":"Unexpected token \f in JSON at position 90"}
+{"level":50,"time":1682029294273,"pid":9308,"hostname":"DESKTOP-492C8BG","msg":"ErrorDeAutenticacion is not defined"}
+{"level":50,"time":1682030189326,"pid":13288,"hostname":"DESKTOP-492C8BG","msg":"Unexpected token e in JSON at position 0"}
+{"level":50,"time":1682030218413,"pid":13288,"hostname":"DESKTOP-492C8BG","msg":"Unexpected end of JSON input"}
+{"level":40,"time":1682036428476,"pid":11748,"hostname":"DESKTOP-492C8BG","msg":"No hay usuario logueado"}
+{"level":40,"time":1682036470748,"pid":11748,"hostname":"DESKTOP-492C8BG","msg":"No hay usuario logueado"}
+{"level":40,"time":1682036535263,"pid":11748,"hostname":"DESKTOP-492C8BG","msg":"No hay usuario logueado"}
+{"level":40,"time":1682036616265,"pid":11748,"hostname":"DESKTOP-492C8BG","msg":"No hay usuario logueado"}
+{"level":40,"time":1682036746033,"pid":11748,"hostname":"DESKTOP-492C8BG","msg":"No hay usuario logueado"}
+{"level":50,"time":1682036944753,"pid":8404,"hostname":"DESKTOP-492C8BG","msg":"_id is not defined"}
+{"level":50,"time":1682038980580,"pid":14132,"hostname":"DESKTOP-492C8BG","msg":"invalid token"}
+{"level":40,"time":1682039498479,"pid":12548,"hostname":"DESKTOP-492C8BG","msg":"no se encontró producto con ese id (e7d13851-894d-4f08-b6620519cbb713f)"}
+{"level":50,"time":1682042438843,"pid":3592,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
+{"level":50,"time":1682042539129,"pid":3592,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}

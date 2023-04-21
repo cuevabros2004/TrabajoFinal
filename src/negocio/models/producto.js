@@ -1,26 +1,30 @@
 import { ProductsDTO } from "../dtos/productsDTO.js"
-
+import { randomUUID } from "crypto"
 
 class Productos {
     #id
-    #title
+    #name
+    #description
     #price
-    #thumbnail
+    #image
 
-    constructor({ _id, title, price, thumbnail }) {
-        this.#id = _id
-        this.#title = title
+    constructor({ name, description, price, image }) {
+        this.#id = randomUUID()
+        this.#name = name
+        this.#description = description
         this.#price = price
-        this.#thumbnail = thumbnail
+        this.#image = image
     }
 
     get _id() { return this.#id }
 
-    get title() { return this.#title }
+    get name() { return this.#name }
+
+    get description() { return this.#description }
 
     get price() { return this.#price }
 
-    get thumbnail() { return this.#thumbnail }
+    get image() { return this.#image }
  
    guardarProducto(producto){
         const resul =   products.save(producto);
@@ -31,9 +35,10 @@ class Productos {
         return new ProductsDTO(
             {
                 _id: this.#id,
-                title: this.#title,
+                name: this.#name,
+                description: this.#description,
                 price: this.#price,
-                thumbnail: this.#thumbnail
+                image: this.#image
             }
         )
     }

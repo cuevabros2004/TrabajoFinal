@@ -7,7 +7,6 @@ class ProductServicio {
 
     async grabarProducto(objeto) {
         try {
-            objeto._id = randomUUID();
             const product = new Productos(objeto);
             const registroProduct = await Products.grabarProducto(product)
             return registroProduct  
@@ -36,6 +35,7 @@ class ProductServicio {
     async actualizarProducto(objeto) {
         try {
             const product = new Productos(objeto);
+
             const updateProduct = await Products.actualizarProducto(product)
             return updateProduct  
         } catch (error) {

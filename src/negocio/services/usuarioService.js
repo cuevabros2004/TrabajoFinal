@@ -55,6 +55,8 @@ class UsuarioServicio{
         }
     }
 
+ 
+
 }
 
 export const usuarioServicio = new UsuarioServicio();

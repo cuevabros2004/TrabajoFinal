@@ -114,7 +114,8 @@ class ContainerMongodb {
     async update(objeto) {
 
         try {
-            await this.coleccion.updateMany({ _id: objeto._id }, { $set: { "name": objeto.name, "description": objeto.description, "price": objeto.price, "image(url)": objeto.imageurl } })
+            console.log(objeto)
+            await this.coleccion.updateMany({ _id: objeto._idProd }, { $set: { "name": objeto.name, "description": objeto.description, "price": objeto.price, "image(url)": objeto.imageurl } })
             return objeto;
         }
         catch (error) {

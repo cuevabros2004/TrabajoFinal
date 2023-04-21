@@ -25,24 +25,22 @@ function controladorLogout(req, res) {
 
 async function controladorLoginp(req, res) {
 
-  const authorizationHeader = req.headers.authorization
-
   const usuarioBuscado = await usuarioServicio.existeUsuario(req.body.email)
 
   //Controlar que exista y los datos sean correctos
-  if (usuarioBuscado){    
-      const passwordMatch = await usuarioServicio.validaPassword(usuarioBuscado.password, req.body.password)
+  if (usuarioBuscado) {
+    const passwordMatch = await usuarioServicio.validaPassword(usuarioBuscado.password, req.body.password)
 
-     if (passwordMatch){
-        const token = cifrarJWT(req.body)
-        res.header('authorization', token)
-        res.status(200).json({"usuario": req.body})
-     }else{
-        return res.status(401).json('Contraseña Incorrecta')
-     }
+    if (passwordMatch) {
+      const token = cifrarJWT(req.body)
+      res.header('authorization', token)
+      res.status(200).json({"token": token} )
+    } else {
+      return res.status(401).json('Contraseña Incorrecta')
+    }
 
-  }else{
-      return res.status(401).json('Usuario no autorizado')
+  } else {
+    return res.status(401).json('Usuario no autorizado')
   }
 
 }
@@ -81,11 +79,11 @@ async function controladorRegistro(req, res) {
 
 async function controladorInfousuario(req, res) {
 
-  if (req.session.user) {
-    const usuario = await users.buscar_usuario(req.session.user)
-    if (usuario.message)
+  if (req.user){
+    const usuario = await usuarioServicio.existeUsuario(req.user)
+    if (usuario.message) 
       loggerError(usuario.message)
-    else
+      else
       res.json(usuario)
   } else {
     loggerWarn("No hay usuario logueado")
@@ -94,18 +92,6 @@ async function controladorInfousuario(req, res) {
 
 }
 
-function autenticacion(req, res, next) {
-  // si no tiene credenciales/token reboto con error 401....
-  const authorizationHeader = req.headers.authorization
-  if (!authorizationHeader) next(new ErrorDeAutenticacion())
-  // buscamos un bearer token, con formato: 'bearer gs98d7ff97fdg987df9g87ads9f8a7sd98af7'
-  const token = authorizationHeader.split(' ')[1]
 
-  const user = descifrarJWT(token)
-
-  // sino, autenticacion exitosa
-  req.user = user
-  next()
-}
 
 export { controladorLoginp, controladorRegistro, controladorLogout, controladorInfousuario }

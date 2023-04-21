@@ -1,18 +1,18 @@
 import loggerError from '../../negocio/utils/pinoError.js';
 import {productoServicio} from '../../negocio/services/productoService.js'
- 
+import loggerWarn from '../../negocio/utils/pinoWarn.js';
  
 
 async function controladorPostProductos(req, res) {
     res.status(201);
     const dataProd = req.body;
     
-    const resul = await productService.grabarProducto(objeto)
+    const resul = await productoServicio.grabarProducto(dataProd)
 
     if (resul.message)
         loggerError(resul.message)
     else
-        res.json(objeto)
+        res.json(dataProd)
 }
 
 async function controladorGetProductos(req, res) {
@@ -45,7 +45,7 @@ async function controladorGetProductosSegunId({ params: { id } }, res) {
 
 async function controladorPutProductosSegunId({ body, params: { id } }, res) {
 
-    const productos = await productService.listarProductoPorId(id);
+    const productos = await productoServicio.listarProductoPorId(id);
 
     if (!productos) {
         res.status(404);
@@ -56,7 +56,7 @@ async function controladorPutProductosSegunId({ body, params: { id } }, res) {
             loggerError(productos.message)
         else {
             body._id = id;
-            await prodTest.update(body);
+            await productoServicio.actualizarProducto(body);
             res.json(body);
         }
     }

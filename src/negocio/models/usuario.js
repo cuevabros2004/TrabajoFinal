@@ -1,4 +1,5 @@
 import { usuarioDTO } from "../dtos/usuarioDTO.js"
+import { randomUUID } from "crypto"
 
 class Usuarios{
     #_id
@@ -8,8 +9,8 @@ class Usuarios{
     #lastname
     #image
 
-    constructor({_id, email, password, name, lastname, image}){
-        this.#_id = _id;
+    constructor({email, password, name, lastname, image}){
+        this.#_id = randomUUID();
         this.#email = email;
         this.#password = password;
         this.#name = name;

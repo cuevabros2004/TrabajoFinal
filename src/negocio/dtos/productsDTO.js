@@ -1,8 +1,9 @@
 export class ProductsDTO{
-    constructor({ _id, title, price, thumbnail }){
+    constructor({ _id, name, description, price, image }){
         this._id = _id;
-        this.title = title;
+        this.name = name;
+        this.description = description;
         this.price = price;
-        this.thumbnail = thumbnail;
+        this.image = image;
     }
 }
