@@ -14,7 +14,7 @@ function autenticacion(req, res, next) {
     const user = descifrarJWT(token)
   
     // sino, autenticacion exitosa
-    req.user = user.email
+    req.user = user
     next()
   }
 

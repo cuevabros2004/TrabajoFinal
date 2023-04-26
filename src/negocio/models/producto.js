@@ -8,8 +8,8 @@ class Productos {
     #price
     #image
 
-    constructor({ name, description, price, image }) {
-        this.#id = randomUUID()
+    constructor({ _id = randomUUID(), name, description, price, image }) {
+        this.#id = _id
         this.#name = name
         this.#description = description
         this.#price = price

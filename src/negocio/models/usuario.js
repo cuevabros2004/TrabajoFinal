@@ -9,8 +9,8 @@ class Usuarios{
     #lastname
     #image
 
-    constructor({email, password, name, lastname, image}){
-        this.#_id = randomUUID();
+    constructor({ _id = randomUUID(), email, password, name, lastname, image}){
+        this.#_id = _id;
         this.#email = email;
         this.#password = password;
         this.#name = name;

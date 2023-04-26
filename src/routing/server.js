@@ -7,11 +7,11 @@ import routerApiShoppingCart from './routers/routerApiShoppingCart.js'
 import { Server as HttpServer } from 'http'
 import logIn from '../negocio/utils/logIn.js'
 import routerLogin from './routers/routerLogin.js'
-import routerApiBuy from './routers/routerApiBuy.js'
+import routerApiOrden from './routers/routerApiOrden.js';
 import loggerInfo from '../negocio/utils/pinoInfo.js';
 import loggerError from '../negocio/utils/pinoError.js';
 import parseArgs from 'yargs/yargs'
-
+import routerImage from './routers/routerImagenes.js';
 
 const servidor = express()
 
@@ -27,11 +27,14 @@ logIn(servidor);
 
 //Middlewares para los routers
 servidor.use('/api/products', routerApiProducts)
-servidor.use('/api/shoppingcart', routerApiShoppingCart)
+servidor.use('/api/shoppingcartproducts', routerApiShoppingCart)
 servidor.use('/', routerLogin)
-servidor.use('/api/buy', routerApiBuy)
+servidor.use('/api/orders', routerApiOrden)
+servidor.use('/api/images', routerImage)
 servidor.use(express.static('public'))
+servidor.use(express.static('public/img'))
 servidor.use((err, req, res, next) => loggerError(err.message));
+
 
 //Si viene de una ruta no implementada
 servidor.all('*', (req, res) => {

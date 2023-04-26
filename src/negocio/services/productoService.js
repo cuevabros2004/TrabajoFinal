@@ -1,6 +1,5 @@
 import Productos from '../models/producto.js'
 import { Products } from '../repository/producto/index.js';
-import {randomUUID}  from 'crypto';
 
 
 class ProductServicio {

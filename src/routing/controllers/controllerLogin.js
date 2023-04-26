@@ -6,6 +6,7 @@ import { EMAILADMIN } from '../../config/config.js'
 import { usuarioServicio } from '../../negocio/services/usuarioService.js';
 import nodemailer from '../../negocio/utils/nodemailer.js'
 import { cifrarJWT, descifrarJWT } from '../../negocio/utils/jwt.js'
+import { carritoServicio } from '../../negocio/services/carritoService.js';
 
 const users = new ContainerUser('users')
 const cart = new ContainerMongodb('cart')
@@ -30,13 +31,14 @@ async function controladorLoginp(req, res) {
   //Controlar que exista y los datos sean correctos
   if (usuarioBuscado) {
     const passwordMatch = await usuarioServicio.validaPassword(usuarioBuscado.password, req.body.password)
-
+    console.log("usuario buscado")
+console.log(usuarioBuscado)
     if (passwordMatch) {
-      const token = cifrarJWT(req.body)
+      const token = cifrarJWT(usuarioBuscado)
       res.header('authorization', token)
-      res.status(200).json({"token": token} )
+      res.status(200).json({ "token": token })
     } else {
-      return res.status(401).json('Contraseña Incorrecta')
+      res.status(401).json('Contraseña Incorrecta')
     }
 
   } else {
@@ -48,42 +50,31 @@ async function controladorLoginp(req, res) {
 
 async function controladorRegistro(req, res) {
 
-  const objeto = req.body;
+  try {
+    const objeto = req.body;
 
-  const userRegistered = await usuarioServicio.registerUsuario(req.body)
-
-  res.header('authorization', cifrarJWT(objeto))
-
-  //Doy de alta un carrito para este usuario
-  const productos = []
-
-  const carrito = {
-    usuario: req.body.username,
-    productos: productos
+    const userRegistered = await usuarioServicio.registerUsuario(req.body)
+    
+    res.header('authorization', cifrarJWT(objeto))
+    res.status(201).json(userRegistered)
+  } catch (error) {
+    res.status(201).json(error.message)
   }
-  if (carrito.message)
-    loggerError(objeto.message)
-  else
-    cart.save(carrito)
-  ////////////
+  
 
 
-  //Envio correo al administrador con los datos del usuario dado de alta
-  const html = `<h1 style="color: blue;">Datos del Usuario creado: </h1> <strong>Usuario: </strong> ${req.body.email} <br> <strong>Contraseña: </strong> ${req.body.password} <br> <strong>Nombre: </strong> ${req.body.name} <br> <strong>Apellido: </strong> ${req.body.apellido} <br> <strong>Tipo de Usuario: </strong> "Usuario" <br>`
-  nodemailer("Mailer", EMAILADMIN, "nuevo registro", html, null)
-
-  res.status(201).json(objeto);
+  
 
 }
 
 
 async function controladorInfousuario(req, res) {
 
-  if (req.user){
-    const usuario = await usuarioServicio.existeUsuario(req.user)
-    if (usuario.message) 
+  if (req.user) {
+    const usuario = await usuarioServicio.existeUsuario(req.user.email)
+    if (usuario.message)
       loggerError(usuario.message)
-      else
+    else
       res.json(usuario)
   } else {
     loggerWarn("No hay usuario logueado")

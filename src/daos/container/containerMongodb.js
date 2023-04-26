@@ -15,7 +15,8 @@ class ContainerMongodb {
 
         try {
             await this.coleccion.insertOne(objeto)
-            return 'Id del objeto guardado: ' + this.coleccion._id
+
+            return objeto
         }
         catch (error) {
             return error
@@ -112,10 +113,8 @@ class ContainerMongodb {
 
     //PRODUCTOS y CARRITO
     async update(objeto) {
-
         try {
-            console.log(objeto)
-            await this.coleccion.updateMany({ _id: objeto._idProd }, { $set: { "name": objeto.name, "description": objeto.description, "price": objeto.price, "image(url)": objeto.imageurl } })
+            await this.coleccion.updateMany({ _id: objeto._id }, { $set: { "name": objeto.name, "description": objeto.description, "price": objeto.price, "image(url)": objeto.imageurl } })
             return objeto;
         }
         catch (error) {
@@ -127,8 +126,8 @@ class ContainerMongodb {
     //CARRITO
     async save_products(objeto) {
         try {
-            console.log(objeto)
             await this.coleccion.updateOne({ _id: objeto._id }, { $set: { "productos": objeto.productos } })
+            //await this.coleccion.updateOne({ _id: objeto._id }, { "productos": objeto })
             return objeto;
         }
         catch (error) {
@@ -138,9 +137,9 @@ class ContainerMongodb {
 
 
     //CARRITO
-    async deleteByIdCart(usuario) {
+    async deleteByIdProd(idCart, productos) {
         try {
-            const carritoVaciado = await this.coleccion.updateOne({ usuario: usuario }, { $set: { "productos": [] } })
+            const carritoVaciado = await this.coleccion.updateOne({ _id: idCart }, { $set: { "productos": productos } })
             return carritoVaciado
         }
         catch (error) {
@@ -150,34 +149,19 @@ class ContainerMongodb {
 
 
     //CARRITO
-    async deleteByIdProd(indice_cart, indice_prod) {
+    async deleteByIdCart(usuario) {
+
         try {
-            this.cart = await this.getAll()
-            const eliminado = this.cart[indice_cart].productos.splice(indice_prod, 1)
-            await this.coleccion.updateOne({ _id: this.cart[indice_cart]._id }, { $set: { "productos": this.cart[indice_cart].productos } })
+            const eliminado = await this.coleccion.updateOne({idUsuario: usuario}, {$set: {"productos": []}})
             return eliminado
         }
-        catch (error) {
+        catch(error){
             return error
-        }
+        } 
     }
 
 
-    //Funciones de usuarios
-    async esAdmin(usuario) {
-        try {
-            const user = await this.coleccion.findOne({ username: usuario })
-            if (user.tipo_usuario == USUARIOADMIN) {
-                return true
-            }
-            else {
-                return false
-            }
-        } catch (error) {
-            return error
-        }
-    }
-
+S
     async buscar_usuario(usuario) {
         try {
             const user = await this.coleccion.findOne({ email: usuario })
@@ -187,7 +171,26 @@ class ContainerMongodb {
         }
     }
 
- 
+    async getCarritoByUserId(id) {
+
+        try {
+
+            const objetoBuscado = await this.coleccion.find({ idUsuario: id }).toArray()
+
+            if (objetoBuscado[0] === undefined) {
+                return null
+            } else {
+                return objetoBuscado[0];
+            }
+
+        }
+
+        catch (error) {
+            error => { throw error }
+        }
+
+    }
+
 
 
 }
