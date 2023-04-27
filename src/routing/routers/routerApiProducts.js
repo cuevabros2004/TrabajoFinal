@@ -9,8 +9,7 @@ import  {controladorGetProductos,
         controladorPostProductos,
         controladorPutProductosSegunId,
         controladorGetProductosSegunId,
-        controladorDeleteProductosSegunId,
-        soloParaAdmins}  from '../controllers/controllerProducts.js';
+        controladorDeleteProductosSegunId}  from '../controllers/controllerProducts.js';
 
 
 

@@ -26,10 +26,6 @@ class Productos {
 
     get image() { return this.#image }
  
-   guardarProducto(producto){
-        const resul =   products.save(producto);
-        return resul
-    }
 
     datos(){
         return new ProductsDTO(

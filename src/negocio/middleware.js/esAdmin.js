@@ -4,11 +4,11 @@ import loggerError from '../utils/pinoError.js';
 import loggerWarn from '../utils/pinoWarn.js';
 
 export async function esAdmin(req, res, next){
-
+  
     if(req.user){
-      const usuario = await usuarioServicio.existeUsuario(req.user)
-      if(usuario.message)
-       loggerError(usuario.message)
+      const usuario = req.user
+      if(!usuario)
+         loggerError(usuario)
       else
           if(usuario.email === EMAILADMIN)         
            next()

@@ -1,8 +1,7 @@
 import { Carritos } from "../repository/carrito/index.js"
 import carritos from "../models/carrito.js"
-import { usuarioServicio } from "./usuarioService.js"
 import { productoServicio } from "./productoService.js"
-import Productos from "../models/producto.js"
+
 
 class CarritoServicio {
 
@@ -30,9 +29,7 @@ class CarritoServicio {
     }
 
     async agregaProductosAlCarrito(usuario, objeto) {
-        console.log("este es el usuario")
-console.log(usuario)
-        //const usuarioLogueado = await usuarioServicio.existeUsuario(usuario)
+
         const carritoUsuario = await Carritos.buscarCarritoUsuarioPorId(usuario._id)
 
         if (!carritoUsuario) {
@@ -57,16 +54,12 @@ console.log(usuario)
         const newProd = new carritos(carritoUsuario)
         await Carritos.agregaProductosAlCarrito(newProd)
 
-
-        //const prodPost =  carritoUsuario.productos.find(p => p.idProd === objeto.idProd)
-
         return prodExistente
 
     }
 
     async eliminarProductoCarritoPorId(usuario, idProd) {
 
-       // const usuarioLogueado = await usuarioServicio.existeUsuario(usuario)
         const carritoUsuario = await Carritos.buscarCarritoUsuarioPorId(usuario._id)
 
         const prodExistentte = carritoUsuario.productos.find(p => p.idProd === idProd)
@@ -86,8 +79,6 @@ console.log(usuario)
             throw new Error('Producto con id: ' + idProd + ' inexistente')
         }
 
-        //const newProd = new carritos(carritoUsuario)
-
         await Carritos.eliminarProductoCarritoPorId(carritoUsuario._id, carritoUsuario.productos)
 
         return prodExistentte
@@ -95,7 +86,7 @@ console.log(usuario)
 
     async eliminarProductosCarrito(usuario){
         const Items = await Carritos.buscarCarritoUsuarioPorId(usuario)
-console.log(Items)
+
         if(!Items)
          return "No hay carritos"
  

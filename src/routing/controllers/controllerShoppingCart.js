@@ -7,8 +7,7 @@ import { carritoServicio } from '../../negocio/services/carritoService.js';
 
 
 async function controladorPostItemProducts(req, res) {
-  console.log("req.user")
-console.log(req.user)
+
   try {
     const cartProductsByuserId = await carritoServicio.agregaProductosAlCarrito(req.user, req.body)   
     res.status(201).json(cartProductsByuserId) 

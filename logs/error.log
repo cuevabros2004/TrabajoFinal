@@ -1,170 +1,22 @@
-{"level":40,"time":1681499849966,"pid":5844,"hostname":"DESKTOP-492C8BG","msg":"No hay un usuario logueado"}
-{"level":40,"time":1681500153996,"pid":5844,"hostname":"DESKTOP-492C8BG","msg":"No hay un usuario logueado"}
-{"level":40,"time":1681500279221,"pid":5844,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
-{"level":40,"time":1681500399101,"pid":5844,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
-{"level":40,"time":1681500506763,"pid":5844,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
-{"level":40,"time":1681500580258,"pid":14560,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
-{"level":40,"time":1681501226521,"pid":14560,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
-{"level":40,"time":1681501348779,"pid":14560,"hostname":"DESKTOP-492C8BG","msg":"error: 403, descripcion:  ruta /api/products método POST no autorizada"}
-{"level":50,"time":1681582131227,"pid":14040,"hostname":"DESKTOP-492C8BG","msg":"Products.listarProductoPorId is not a function"}
-{"level":50,"time":1682029252234,"pid":9308,"hostname":"DESKTOP-492C8BG","msg":"Unexpected token \f in JSON at position 90"}
-{"level":50,"time":1682029294273,"pid":9308,"hostname":"DESKTOP-492C8BG","msg":"ErrorDeAutenticacion is not defined"}
-{"level":50,"time":1682030189326,"pid":13288,"hostname":"DESKTOP-492C8BG","msg":"Unexpected token e in JSON at position 0"}
-{"level":50,"time":1682030218413,"pid":13288,"hostname":"DESKTOP-492C8BG","msg":"Unexpected end of JSON input"}
-{"level":40,"time":1682036428476,"pid":11748,"hostname":"DESKTOP-492C8BG","msg":"No hay usuario logueado"}
-{"level":40,"time":1682036470748,"pid":11748,"hostname":"DESKTOP-492C8BG","msg":"No hay usuario logueado"}
-{"level":40,"time":1682036535263,"pid":11748,"hostname":"DESKTOP-492C8BG","msg":"No hay usuario logueado"}
-{"level":40,"time":1682036616265,"pid":11748,"hostname":"DESKTOP-492C8BG","msg":"No hay usuario logueado"}
-{"level":40,"time":1682036746033,"pid":11748,"hostname":"DESKTOP-492C8BG","msg":"No hay usuario logueado"}
-{"level":50,"time":1682036944753,"pid":8404,"hostname":"DESKTOP-492C8BG","msg":"_id is not defined"}
-{"level":50,"time":1682038980580,"pid":14132,"hostname":"DESKTOP-492C8BG","msg":"invalid token"}
-{"level":40,"time":1682039498479,"pid":12548,"hostname":"DESKTOP-492C8BG","msg":"no se encontró producto con ese id (e7d13851-894d-4f08-b6620519cbb713f)"}
-{"level":50,"time":1682042438843,"pid":3592,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682042539129,"pid":3592,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682168856320,"pid":12500,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682168998363,"pid":13008,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682169088218,"pid":11652,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682194809016,"pid":15036,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682194835584,"pid":15036,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682207230942,"pid":10928,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682210302652,"pid":11344,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682210319917,"pid":11344,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682258899938,"pid":15996,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682258942678,"pid":15996,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682258967525,"pid":15996,"hostname":"DESKTOP-492C8BG","msg":"invalid token"}
-{"level":50,"time":1682265420232,"pid":13100,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682293481100,"pid":17376,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682296785661,"pid":11424,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682296914511,"pid":11424,"hostname":"DESKTOP-492C8BG","msg":"invalid token"}
-{"level":50,"time":1682297762792,"pid":17508,"hostname":"DESKTOP-492C8BG","msg":"Unexpected field"}
-{"level":50,"time":1682297795895,"pid":17508,"hostname":"DESKTOP-492C8BG","msg":"Unexpected field"}
-{"level":50,"time":1682301539533,"pid":3900,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682301679663,"pid":15120,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682301725561,"pid":15120,"hostname":"DESKTOP-492C8BG","msg":"objeto is not defined"}
-{"level":50,"time":1682301791568,"pid":9772,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: undefinedinexistente"}
-{"level":50,"time":1682301836599,"pid":15756,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: undefinedinexistente"}
-{"level":50,"time":1682301950068,"pid":13324,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: undefinedinexistente"}
-{"level":50,"time":1682301976063,"pid":16592,"hostname":"DESKTOP-492C8BG","msg":"user is not defined"}
-{"level":50,"time":1682302014581,"pid":10100,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: undefinedinexistente"}
-{"level":50,"time":1682302056477,"pid":5568,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: [object Object]inexistente"}
-{"level":50,"time":1682302101613,"pid":10984,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: [object Object]inexistente"}
-{"level":50,"time":1682302145378,"pid":10984,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: [object Object]inexistente"}
-{"level":50,"time":1682302166434,"pid":16328,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: [object Object]inexistente"}
-{"level":50,"time":1682302244929,"pid":18220,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of undefined (reading 'idProd')"}
-{"level":50,"time":1682302270263,"pid":3152,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: undefinedinexistente"}
-{"level":50,"time":1682302313877,"pid":11680,"hostname":"DESKTOP-492C8BG","msg":"Cannot access 'idProd' before initialization"}
-{"level":50,"time":1682302337575,"pid":8512,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: undefinedinexistente"}
-{"level":50,"time":1682302379302,"pid":18320,"hostname":"DESKTOP-492C8BG","msg":"user is not defined"}
-{"level":50,"time":1682302443702,"pid":12692,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: [object Object]inexistente"}
-{"level":50,"time":1682302471007,"pid":10072,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: [object Object]inexistente"}
-{"level":50,"time":1682302557341,"pid":3800,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: da8e67de-eae6-4812-9ef8-05dc0116a06binexistente"}
-{"level":50,"time":1682302587950,"pid":15520,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: da8e67de-eae6-4812-9ef8-05dc0116a06binexistente"}
-{"level":50,"time":1682303003555,"pid":14728,"hostname":"DESKTOP-492C8BG","msg":"carritoUsuario.productos is not a function"}
-{"level":50,"time":1682303070468,"pid":12868,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: a4d704cc-8019-487a-95a2-019008faac34 inexistente"}
-{"level":50,"time":1682303319516,"pid":16484,"hostname":"DESKTOP-492C8BG","msg":"i is not defined"}
-{"level":50,"time":1682304616890,"pid":9832,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: 7fc39c3-8c1f-4fd4-8033-65bff0f0c961 inexistente"}
-{"level":50,"time":1682445963602,"pid":5584,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682446010287,"pid":5584,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: 739c3-8c1f-4fd4-8033-65bff0f0c961 inexistente"}
-{"level":50,"time":1682449107107,"pid":10084,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682458230624,"pid":14864,"hostname":"DESKTOP-492C8BG","msg":"idProd is not defined"}
-{"level":50,"time":1682458713929,"pid":16756,"hostname":"DESKTOP-492C8BG","msg":"req is not defined"}
-{"level":50,"time":1682458883181,"pid":5068,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of undefined (reading '0')"}
-{"level":50,"time":1682458982911,"pid":14288,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of undefined (reading '0')"}
-{"level":50,"time":1682459027685,"pid":9696,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of undefined (reading '0')"}
-{"level":50,"time":1682459212140,"pid":8000,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of undefined (reading '0')"}
-{"level":50,"time":1682459245483,"pid":12664,"hostname":"DESKTOP-492C8BG","msg":"Orders is not defined"}
-{"level":50,"time":1682459312186,"pid":12488,"hostname":"DESKTOP-492C8BG","msg":"Ordenes.listarOrder is not a function"}
-{"level":50,"time":1682459724244,"pid":9196,"hostname":"DESKTOP-492C8BG","msg":"user is not defined"}
-{"level":50,"time":1682460661336,"pid":16828,"hostname":"DESKTOP-492C8BG","msg":"No existen ordenes del usuario 6fffe1ca-4323-437b-8699-633c2a93fcbe"}
-{"level":50,"time":1682460762737,"pid":16828,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of undefined (reading '0')"}
-{"level":50,"time":1682460792989,"pid":8988,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of undefined (reading '0')"}
-{"level":50,"time":1682460851212,"pid":14216,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of undefined (reading '0')"}
-{"level":50,"time":1682460894492,"pid":17968,"hostname":"DESKTOP-492C8BG","msg":"No hay productos en el carrito del usuario nuevoUsuario@gmail.com"}
-{"level":50,"time":1682460931306,"pid":8412,"hostname":"DESKTOP-492C8BG","msg":"No hay productos en el carrito del usuario nuevoUsuario@gmail.com"}
-{"level":50,"time":1682460965436,"pid":8140,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of undefined (reading 'forEach')"}
-{"level":50,"time":1682461003537,"pid":16992,"hostname":"DESKTOP-492C8BG","msg":"carritoServicio.eliminarCarrito is not a function"}
-{"level":50,"time":1682461612183,"pid":2608,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682461727768,"pid":16100,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682461872927,"pid":5188,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682461898300,"pid":860,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682461923126,"pid":2628,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682461951201,"pid":3644,"hostname":"DESKTOP-492C8BG","msg":"productos.datos is not a function"}
-{"level":50,"time":1682462633293,"pid":3644,"hostname":"DESKTOP-492C8BG","msg":"productos.datos is not a function"}
-{"level":50,"time":1682462647759,"pid":11108,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682462709700,"pid":16068,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682462737361,"pid":276,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682462897408,"pid":10568,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682462916852,"pid":11392,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682462930107,"pid":13560,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682462984505,"pid":17484,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682462998370,"pid":9492,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682463009411,"pid":2184,"hostname":"DESKTOP-492C8BG","msg":"producto is not defined"}
-{"level":50,"time":1682463021187,"pid":15984,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682463146757,"pid":8708,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682463246886,"pid":14816,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682463397829,"pid":16760,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682463486745,"pid":16292,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682463525879,"pid":16488,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682463544683,"pid":18188,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682463582184,"pid":13996,"hostname":"DESKTOP-492C8BG","msg":"productos[0].forEach is not a function"}
-{"level":50,"time":1682463825268,"pid":15588,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of undefined (reading '_id')"}
-{"level":50,"time":1682463858338,"pid":9808,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682463891976,"pid":16240,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682463909562,"pid":7344,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682464000402,"pid":15376,"hostname":"DESKTOP-492C8BG","msg":"Ordenes.grabarOrden is not a function"}
-{"level":50,"time":1682464034649,"pid":14204,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682464546160,"pid":5448,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682464655535,"pid":11044,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682464863687,"pid":10996,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682464904238,"pid":8312,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682464936909,"pid":7304,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682465007621,"pid":14804,"hostname":"DESKTOP-492C8BG","msg":"req is not defined"}
-{"level":50,"time":1682465048277,"pid":10060,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682465075185,"pid":7016,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682465105753,"pid":3416,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682465178060,"pid":12896,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682465270586,"pid":12932,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682465309948,"pid":12932,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682465323104,"pid":12932,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682465380183,"pid":14720,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682465448725,"pid":2368,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682465472468,"pid":12244,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682465497577,"pid":10780,"hostname":"DESKTOP-492C8BG","msg":"p.forEach is not a function"}
-{"level":50,"time":1682465620959,"pid":16488,"hostname":"DESKTOP-492C8BG","msg":"productos.forEach is not a function"}
-{"level":50,"time":1682465650139,"pid":15784,"hostname":"DESKTOP-492C8BG","msg":"productos.forEach is not a function"}
-{"level":50,"time":1682466389786,"pid":6800,"hostname":"DESKTOP-492C8BG","msg":"productoServicio.listarProducto(...).datos is not a function"}
-{"level":50,"time":1682467120713,"pid":2304,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682467168264,"pid":16052,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682467217818,"pid":11524,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682467289729,"pid":15896,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682467335604,"pid":1036,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682467380353,"pid":1408,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682467487733,"pid":10648,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682467526090,"pid":5448,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682467877400,"pid":3196,"hostname":"DESKTOP-492C8BG","msg":"tipo invalido"}
-{"level":50,"time":1682469254483,"pid":9972,"hostname":"DESKTOP-492C8BG","msg":"No existen ordenes del usuario 6fffe1ca-4323-437b-8699-633c2a93fcbe"}
-{"level":50,"time":1682469873360,"pid":12216,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682469915029,"pid":12216,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
-{"level":50,"time":1682471309362,"pid":15220,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682472430588,"pid":4828,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682472590808,"pid":5836,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682472706745,"pid":2452,"hostname":"DESKTOP-492C8BG","msg":"No existe Carrito para el usuario: ([object Object])"}
-{"level":50,"time":1682472740267,"pid":9904,"hostname":"DESKTOP-492C8BG","msg":"No existe Carrito para el usuario: (undefined)"}
-{"level":50,"time":1682472764636,"pid":9396,"hostname":"DESKTOP-492C8BG","msg":"No existe Carrito para el usuario: (undefined)"}
-{"level":50,"time":1682472806665,"pid":12816,"hostname":"DESKTOP-492C8BG","msg":"No existe Carrito para el usuario: (undefined)"}
-{"level":50,"time":1682472887852,"pid":12808,"hostname":"DESKTOP-492C8BG","msg":"No existe Carrito para el usuario: (undefined)"}
-{"level":50,"time":1682472918171,"pid":1768,"hostname":"DESKTOP-492C8BG","msg":"No existe Carrito para el usuario: (undefined)"}
-{"level":50,"time":1682473079246,"pid":12784,"hostname":"DESKTOP-492C8BG","msg":"No existe Carrito para el usuario: (undefined)"}
-{"level":50,"time":1682473162277,"pid":12784,"hostname":"DESKTOP-492C8BG","msg":"idProd is not defined"}
-{"level":50,"time":1682473365888,"pid":9104,"hostname":"DESKTOP-492C8BG","msg":"idProd is not defined"}
-{"level":50,"time":1682473417314,"pid":1296,"hostname":"DESKTOP-492C8BG","msg":"idProd is not defined"}
-{"level":50,"time":1682474720139,"pid":4532,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682474828642,"pid":11000,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682474913735,"pid":5192,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682474981799,"pid":10332,"hostname":"DESKTOP-492C8BG","msg":"Cannot read properties of null (reading '_id')"}
-{"level":50,"time":1682475081097,"pid":12548,"hostname":"DESKTOP-492C8BG","msg":"user is not defined"}
-{"level":50,"time":1682475115144,"pid":8300,"hostname":"DESKTOP-492C8BG","msg":"no existe carrito para el usuario (f0267b00-eb97-4f62-9f30-5a73c407a164)"}
-{"level":50,"time":1682475254244,"pid":18336,"hostname":"DESKTOP-492C8BG","msg":"no existe carrito para el usuario (f0267b00-eb97-4f62-9f30-5a73c407a164)"}
-{"level":50,"time":1682475559349,"pid":17284,"hostname":"DESKTOP-492C8BG","msg":"carritoServicio.buscarCarritoUsuarioPorId is not a function"}
-{"level":50,"time":1682476241699,"pid":1336,"hostname":"DESKTOP-492C8BG","msg":"carritoServicio.eliminarCarrito is not a function"}
-{"level":50,"time":1682476300779,"pid":6228,"hostname":"DESKTOP-492C8BG","msg":"Carritos is not defined"}
+{"level":50,"time":1682596903537,"pid":13124,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
+{"level":50,"time":1682598093085,"pid":6636,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
+{"level":50,"time":1682598106728,"pid":6636,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
+{"level":50,"time":1682598135208,"pid":6636,"hostname":"DESKTOP-492C8BG","msg":"invalid token"}
+{"level":50,"time":1682599127423,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"parametro requerido"}
+{"level":50,"time":1682599582432,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"jwt must be provided"}
+{"level":50,"time":1682599727621,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
+{"level":50,"time":1682600047057,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"invalid token"}
+{"level":50,"time":1682600304046,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: 739c3-8c1f-4fd4-8033-65bff0f0c961 inexistente"}
+{"level":50,"time":1682600328813,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: 900fcbe3-1398-4860-9bf9-521ceafcd812 inexistente"}
+{"level":50,"time":1682600363943,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"invalid token"}
+{"level":50,"time":1682600405222,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"Producto con id: 900fcbe3-1398-4860-9bf9-521ceafcd812 inexistente"}
+{"level":40,"time":1682600474776,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"no se encontró producto con ese id (900fce3-1398-4860-9bf9-521ceafcd812)"}
+{"level":50,"time":1682600711251,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
+{"level":50,"time":1682601274942,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"No existe el producto con Id: (undefined)"}
+{"level":50,"time":1682601333252,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"No existe el producto con Id: (undefined)"}
+{"level":50,"time":1682601473616,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"No existe el producto con Id: (e7d13851-894d-4f08-b663-20519cbb713f)"}
+{"level":50,"time":1682601772668,"pid":5700,"hostname":"DESKTOP-492C8BG","msg":"Cannot destructure property '_id' of '(intermediate value)' as it is null."}
+{"level":50,"time":1682601956789,"pid":3636,"hostname":"DESKTOP-492C8BG","msg":"Cannot destructure property '_id' of '(intermediate value)' as it is null."}
+{"level":50,"time":1682601993848,"pid":13632,"hostname":"DESKTOP-492C8BG","msg":"Cannot destructure property '_id' of '(intermediate value)' as it is null."}
+{"level":50,"time":1682602075817,"pid":17016,"hostname":"DESKTOP-492C8BG","msg":"No existen ordenes del usuario a7d05c27-8243-4a5f-940c-2a27d9caeeb8"}
+{"level":50,"time":1682602382278,"pid":17016,"hostname":"DESKTOP-492C8BG","msg":"No existe el producto con Id: (d74a3ad6-907c-489-a168-3dad6dc00c9a)"}

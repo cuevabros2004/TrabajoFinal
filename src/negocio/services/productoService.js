@@ -34,7 +34,6 @@ class ProductServicio {
     async actualizarProducto(objeto) {
         try {
             const product = new Productos(objeto);
-
             const updateProduct = await Products.actualizarProducto(product)
             return updateProduct  
         } catch (error) {

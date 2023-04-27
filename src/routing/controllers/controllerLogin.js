@@ -1,5 +1,4 @@
 const { ContainerMongodb } = await import('../../daos/container/containerMongodb.js')
-import ContainerUser from '../../daos/container/containerUser.js'
 import loggerError from '../../negocio/utils/pinoError.js';
 import loggerWarn from '../../negocio/utils/pinoWarn.js';
 import { EMAILADMIN } from '../../config/config.js'
@@ -8,7 +7,6 @@ import nodemailer from '../../negocio/utils/nodemailer.js'
 import { cifrarJWT, descifrarJWT } from '../../negocio/utils/jwt.js'
 import { carritoServicio } from '../../negocio/services/carritoService.js';
 
-const users = new ContainerUser('users')
 const cart = new ContainerMongodb('cart')
 
 
@@ -31,8 +29,7 @@ async function controladorLoginp(req, res) {
   //Controlar que exista y los datos sean correctos
   if (usuarioBuscado) {
     const passwordMatch = await usuarioServicio.validaPassword(usuarioBuscado.password, req.body.password)
-    console.log("usuario buscado")
-console.log(usuarioBuscado)
+
     if (passwordMatch) {
       const token = cifrarJWT(usuarioBuscado)
       res.header('authorization', token)

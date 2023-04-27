@@ -15,7 +15,6 @@ class ContainerMongodb {
 
         try {
             await this.coleccion.insertOne(objeto)
-
             return objeto
         }
         catch (error) {
@@ -114,8 +113,8 @@ class ContainerMongodb {
     //PRODUCTOS y CARRITO
     async update(objeto) {
         try {
-            await this.coleccion.updateMany({ _id: objeto._id }, { $set: { "name": objeto.name, "description": objeto.description, "price": objeto.price, "image(url)": objeto.imageurl } })
-            return objeto;
+            const productoActualizado = await this.coleccion.updateMany({ _id: objeto._id }, { $set: { "name": objeto.name, "description": objeto.description, "price": objeto.price, "image": objeto.image } })
+            return productoActualizado;
         }
         catch (error) {
             return error
@@ -127,7 +126,6 @@ class ContainerMongodb {
     async save_products(objeto) {
         try {
             await this.coleccion.updateOne({ _id: objeto._id }, { $set: { "productos": objeto.productos } })
-            //await this.coleccion.updateOne({ _id: objeto._id }, { "productos": objeto })
             return objeto;
         }
         catch (error) {
@@ -165,6 +163,7 @@ S
     async buscar_usuario(usuario) {
         try {
             const user = await this.coleccion.findOne({ email: usuario })
+ 
             return user
         } catch (error) {
             return error

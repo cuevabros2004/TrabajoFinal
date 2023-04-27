@@ -41,7 +41,6 @@ export class carrito {
     async agregaProductosAlCarrito(objeto) {
         try {
             const prodAgregado = await this.#dao.save_products(objeto)
-
             return prodAgregado
         } catch (error) {
             return error
@@ -60,7 +59,6 @@ export class carrito {
     async eliminarCarrito(usuario) {
         try {
             const resul = await this.#dao.deleteByIdCart(usuario)
-            console.log(resul)
             return resul
         } catch(error) {
             return error

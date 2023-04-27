@@ -4,8 +4,7 @@ import { orderService } from "../../negocio/services/order.service.js"
 
 async function controladorGetOrders(req, res){
     try {
-        const {_id} = await usuarioServicio.existeUsuario(req.user)
-        const prods = await orderService.listarOrder(_id)
+        const prods = await orderService.listarOrder(req.user._id)
         res.status(200).json(prods)
       } catch (error) {
         loggerError(error.message)

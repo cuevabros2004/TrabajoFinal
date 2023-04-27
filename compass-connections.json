@@ -1,0 +1,23 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "19d01f66-e9f4-4a41-bd63-f43c775ae0e6",
+      "connectionOptions": {
+        "connectionString": "mongodb+srv://gcueva:Cave1y2.2023@cluster0.g3azlje.mongodb.net/ecommerce"
+      },
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1682550046592"
+        }
+      },
+      "favorite": {
+        "name": "German Backend",
+        "color": "color3"
+      }
+    }
+  ]
+}

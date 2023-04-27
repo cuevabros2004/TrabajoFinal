@@ -1,16 +1,19 @@
 import dotenv from 'dotenv'
 import path from 'path'
- 
 
+dotenv.config()
 
-dotenv.config({
+process.env.NODE_ENV
+
+dotenv.config(
+    {
+    
     path:    
-        process.env.NODE_ENV === 'prod'
-            ? './variablesEntorno/produccion.env'
-            : './variablesEntorno/desarrollo.env'
+        process.env.NODE_ENV === "prod"
+            ? process.env.RUTA_PROD
+            : process.env.RUTA_DESARROLLO
        
 })
-
 
 export const STRING_CONEXION_MONGO = process.env.STRING_CONEXION_MONGO
 export const USUARIO_CONEXION_MONGO = process.env.USUARIO_CONEXION_MONGO

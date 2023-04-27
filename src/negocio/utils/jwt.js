@@ -6,7 +6,6 @@ function cifrarJWT(datos) {
     return jwt.sign(JSON.parse(JSON.stringify(datos)), SALTENV, { expiresIn: TTL })
 }
 function descifrarJWT(token) {
-    console.log(jwt.verify(token, SALTENV))
     return  jwt.verify(token, SALTENV)
 }
 
