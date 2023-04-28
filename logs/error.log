@@ -26,3 +26,4 @@
 {"level":50,"time":1682641286014,"pid":11360,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
 {"level":50,"time":1682641298324,"pid":11360,"hostname":"DESKTOP-492C8BG","msg":"No existen ordenes del usuario a7d05c27-8243-4a5f-940c-2a27d9caeeb8"}
 {"level":50,"time":1682641350661,"pid":11360,"hostname":"DESKTOP-492C8BG","msg":"No existen ordenes del usuario a7d05c27-8243-4a5f-940c-2a27d9caeeb8"}
+{"level":50,"time":1682649122562,"pid":11900,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
