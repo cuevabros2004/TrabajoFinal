@@ -8,7 +8,7 @@ export class product {
         this.#dao = dao
     }
 
-
+    //Función que permite grabar productos.
     async grabarProducto(producto) {
         try {
             const resul = await this.#dao.save(producto.datos())
@@ -18,6 +18,7 @@ export class product {
         }
     }
 
+    //función que pemite listar los productos.
     async listarProducto() {
         try {
             const dtos = await this.#dao.getAll()
@@ -34,7 +35,7 @@ export class product {
     }
 
 
-
+    //Función que permite actualizar datos de un producto.
     async actualizarProducto(producto) {
         try {
             const resul = await this.#dao.update(producto.datos())
@@ -44,7 +45,7 @@ export class product {
         }
     }
 
-
+    //Función que permite eliminar un producto.
     async eliminarProducto(id) {
         try {
             const resul = await this.#dao.deleteById(id)
@@ -54,7 +55,7 @@ export class product {
         }
     }
 
-
+    //Función que permite obtener los datos de un producto.
     async listarProductoPorId(id) {
         try {
             const dtos = await this.#dao.getById(id)

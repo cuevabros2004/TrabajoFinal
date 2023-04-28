@@ -3,6 +3,7 @@ import {productoServicio} from '../../negocio/services/productoService.js'
 import loggerWarn from '../../negocio/utils/pinoWarn.js';
  
 
+//llama al servicio que permite grabar el producto.
 async function controladorPostProductos(req, res) {
     res.status(201);
     const dataProd = req.body;
@@ -15,6 +16,7 @@ async function controladorPostProductos(req, res) {
         res.json(dataProd)
 }
 
+//Permite listar los productos existentes.
 async function controladorGetProductos(req, res) {
     const productos = await productoServicio.listarProducto();
     if (productos)
@@ -26,6 +28,7 @@ async function controladorGetProductos(req, res) {
         res.json({ "mensaje": "No hay producrtos" })
 }
 
+//permite obtener los datos de un producto.
 async function controladorGetProductosSegunId({ params: { id } }, res) {
     const productos = await productoServicio.listarProductoPorId(id);
 
@@ -43,6 +46,7 @@ async function controladorGetProductosSegunId({ params: { id } }, res) {
 }
 
 
+//Permite actualizar los datos de un producto.
 async function controladorPutProductosSegunId({ body, params: { id } }, res) {
 
     const productos = await productoServicio.listarProductoPorId(id);
@@ -63,7 +67,7 @@ async function controladorPutProductosSegunId({ body, params: { id } }, res) {
 
 }
 
-
+//Permite eliminar un producto.
 async function controladorDeleteProductosSegunId({ params: { id } }, res) {
     const productos = await productoServicio.eliminarProducto(id);
 

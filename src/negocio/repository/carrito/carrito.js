@@ -8,7 +8,7 @@ export class carrito {
         this.#dao = dao
     }
 
-
+    //funciíón que permite crear carrito para el usuario registrado.
     async crearCarrito(carrito) {
         try {
             const carritoCreado = await this.#dao.save(carrito.datos())
@@ -19,6 +19,7 @@ export class carrito {
 
     }
 
+    //función que permite lista los productos del carrito logueado.
     async listarProductosCarritoPorUsuario(_id) {
         try {
             const listaProductosCarritoUsuario = await this.#dao.getById(_id)
@@ -28,6 +29,7 @@ export class carrito {
         }
     }
 
+    //Busca el carrito del usuario.
     async buscarCarritoUsuarioPorId(idUsuario) {
 
         try {
@@ -38,6 +40,7 @@ export class carrito {
         }
     }
 
+    //función que permite agregar productos al carrito.
     async agregaProductosAlCarrito(objeto) {
         try {
             const prodAgregado = await this.#dao.save_products(objeto)
@@ -47,6 +50,7 @@ export class carrito {
         }
     }
 
+    //Función que elimina productos del carrito.
     async eliminarProductoCarritoPorId(idCart, productos){
         try {
             const prodEliminado = await this.#dao.deleteByIdProd(idCart, productos)
@@ -56,6 +60,7 @@ export class carrito {
         }
     }
 
+    //Función que permite eliminar el carrito del usuario.
     async eliminarCarrito(usuario) {
         try {
             const resul = await this.#dao.deleteByIdCart(usuario)

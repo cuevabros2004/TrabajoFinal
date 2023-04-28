@@ -1,3 +1,4 @@
+//Permite subir una imagen al servidor estático.
 function controladorSubirImagen(req, res){
     const file = req.file
 

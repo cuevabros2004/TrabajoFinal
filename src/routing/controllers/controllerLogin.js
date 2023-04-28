@@ -1,27 +1,14 @@
 const { ContainerMongodb } = await import('../../daos/container/containerMongodb.js')
 import loggerError from '../../negocio/utils/pinoError.js';
 import loggerWarn from '../../negocio/utils/pinoWarn.js';
-import { EMAILADMIN } from '../../config/config.js'
 import { usuarioServicio } from '../../negocio/services/usuarioService.js';
-import nodemailer from '../../negocio/utils/nodemailer.js'
 import { cifrarJWT, descifrarJWT } from '../../negocio/utils/jwt.js'
-import { carritoServicio } from '../../negocio/services/carritoService.js';
+
 
 const cart = new ContainerMongodb('cart')
 
-
-
-function controladorLogout(req, res) {
-  if (req.session.user) {
-    req.session.destroy();
-    res.status(200).json({ "mensaje": "Usuario deslogueado" })
-  } else {
-    loggerWarn({ "mensaje": "No hay Usuario logueado" })
-    res.json({ "mensaje": "No hay Usuario logueado" })
-  }
-}
-
-
+//Busca el usuario para corroborar si existe.
+//Valida la contraseña. Crea el token y lo envia por el header para que quede logueado el usuario.
 async function controladorLoginp(req, res) {
 
   const usuarioBuscado = await usuarioServicio.existeUsuario(req.body.email)
@@ -44,7 +31,7 @@ async function controladorLoginp(req, res) {
 
 }
 
-
+//Llama al servicio que permite la registración del usuario.
 async function controladorRegistro(req, res) {
 
   try {
@@ -64,7 +51,7 @@ async function controladorRegistro(req, res) {
 
 }
 
-
+//Obtiene los datos del usuario logueado.
 async function controladorInfousuario(req, res) {
 
   if (req.user) {
@@ -82,4 +69,4 @@ async function controladorInfousuario(req, res) {
 
 
 
-export { controladorLoginp, controladorRegistro, controladorLogout, controladorInfousuario }
+export { controladorLoginp, controladorRegistro,  controladorInfousuario }

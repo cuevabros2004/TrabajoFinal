@@ -10,6 +10,8 @@ import { EMAILADMIN } from '../../config/config.js'
 
 class OrderService {
 
+  //Obtiene la lista de productos del carrito del usuario logueado.
+  //graba la orden y elimina los productos del carrito.
   async grabarOrden(usuario) {
     const productsCart = await carritoServicio.listarProductosCarritoUsuario(usuario)
 
@@ -55,19 +57,20 @@ class OrderService {
     await nodemailer("Mailer", EMAILADMIN, "nuevo venta, compra hecha por " + usuario.lastname + ", " + usuario.name + " - " + usuario.email, html, null)
     html = ""
     const nrocomprobante = Math.floor(Math.random() * 999999);
-    html = html + `<strong>El númerp de comprobante es: #${nrocomprobante}.</strong>`
-    await nodemailer("Mailer", usuario.email, "Pedido #" + nrocomprobante + " en Proceso", html, null)
+    html = html + `<strong>El númerp de comprobante es: N° ${nrocomprobante}.</strong>`
+    await nodemailer("Mailer", usuario.email, "Pedido N°" + nrocomprobante + " se encuentra en Proceso", html, null)
 
     //Se notifica al Usuario Comprador
     await nodemailer("Mailer", usuario.email, "nuevo pedido, " + usuario.lastname + ", " + usuario.name + " - " + usuario.email, html, null)
     html = ""
-    html = html + `<strong>Su pedido #${nrocomprobante} está en proceso.</strong>`
+    html = html + `<strong>Su pedido #${nrocomprobante} se encuentra en proceso.</strong>`
     await nodemailer("Mailer", usuario.email, "Pedido #" + nrocomprobante + " en Proceso", html, null)
 
     return registroOrder
 
   }
 
+  //lista las ordenes correspondiente al usuario logueado.
   async listarOrder(usuario) {
     const listadoOrders = await Orders.listarOrder(usuario)
 

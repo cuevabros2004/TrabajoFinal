@@ -5,7 +5,7 @@ import carritos from '../../negocio/models/carrito.js';
 import { carritoServicio } from '../../negocio/services/carritoService.js';
 
 
-
+//Permite agregar un producto al carrito del usuario logueado.
 async function controladorPostItemProducts(req, res) {
 
   try {
@@ -18,7 +18,7 @@ async function controladorPostItemProducts(req, res) {
 
 }
 
-
+//Permite obtener los productos del carrito del usuario logueado.
 async function controladorGetItems(req, res) {
 
   try {
@@ -32,7 +32,7 @@ async function controladorGetItems(req, res) {
 }
 
 
-
+//Borra los productos del carrito del usuario logueado.
 async function controladorDeleteItems(req, res) {
 
   try {
@@ -47,7 +47,7 @@ async function controladorDeleteItems(req, res) {
 }
 
 
-
+//Elimina un producto del carrito del usuario logueado.
 async function controladorDeleteItemsSegunIdProducts( { user, params: {idProd}  } , res) {
 
   try {

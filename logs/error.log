@@ -20,3 +20,9 @@
 {"level":50,"time":1682601993848,"pid":13632,"hostname":"DESKTOP-492C8BG","msg":"Cannot destructure property '_id' of '(intermediate value)' as it is null."}
 {"level":50,"time":1682602075817,"pid":17016,"hostname":"DESKTOP-492C8BG","msg":"No existen ordenes del usuario a7d05c27-8243-4a5f-940c-2a27d9caeeb8"}
 {"level":50,"time":1682602382278,"pid":17016,"hostname":"DESKTOP-492C8BG","msg":"No existe el producto con Id: (d74a3ad6-907c-489-a168-3dad6dc00c9a)"}
+{"level":50,"time":1682605802550,"pid":9336,"hostname":"DESKTOP-492C8BG","msg":"No hay productos en el carrito del usuario a7d05c27-8243-4a5f-940c-2a27d9caeeb8"}
+{"level":50,"time":1682614023981,"pid":11392,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
+{"level":50,"time":1682614043400,"pid":11392,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
+{"level":50,"time":1682641286014,"pid":11360,"hostname":"DESKTOP-492C8BG","msg":"jwt expired"}
+{"level":50,"time":1682641298324,"pid":11360,"hostname":"DESKTOP-492C8BG","msg":"No existen ordenes del usuario a7d05c27-8243-4a5f-940c-2a27d9caeeb8"}
+{"level":50,"time":1682641350661,"pid":11360,"hostname":"DESKTOP-492C8BG","msg":"No existen ordenes del usuario a7d05c27-8243-4a5f-940c-2a27d9caeeb8"}

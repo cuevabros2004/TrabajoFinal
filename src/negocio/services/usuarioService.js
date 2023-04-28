@@ -7,16 +7,8 @@ import { EMAILADMIN } from "../../config/config.js";
 
 class UsuarioServicio {
 
-    async loginUsuario(objeto) {
-
-        try {
-            return objeto
-        } catch (error) {
-            return error
-        }
-
-    }
-
+    //Controla si ya existe el usuario. Si no existe encripta la clave, 
+    //graba el usuario y el carrito vacio para el usuario.
     async registerUsuario(objeto) {
 
         const usuarioNuevoBuscado = await this.existeUsuario(objeto.email)
@@ -47,6 +39,7 @@ class UsuarioServicio {
         
     }
 
+    //Busca el usuario
     async existeUsuario(usuario) {
         try {
             const usuarioBuscado = await User.buscarUsuario(usuario)
@@ -58,6 +51,7 @@ class UsuarioServicio {
         }
     }
 
+    //Valida si la contraseña en la BD coincide con la ingresada por el usuario.
     async validaPassword(passwordReq, passwordBD) {
         try {
             const correctPassword = await validatePassword(passwordReq, passwordBD)

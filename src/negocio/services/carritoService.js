@@ -5,6 +5,7 @@ import { productoServicio } from "./productoService.js"
 
 class CarritoServicio {
 
+    //Crea el carrito
     async crearCarrito(objeto) {
         try {
             const cartObject = new carritos(objeto)
@@ -16,7 +17,7 @@ class CarritoServicio {
         }
     }
 
-
+    //Busca el carrito del usuario y luego con el id del carrito obtiene la lista de productos.
     async listarProductosCarritoUsuario(objeto) {
             const carritoUsuario = await Carritos.buscarCarritoUsuarioPorId(objeto._id)
             const listaProductosCarritoUsuario = await Carritos.listarProductosCarritoPorUsuario(carritoUsuario._id)
@@ -28,6 +29,8 @@ class CarritoServicio {
             return listaProductosCarritoUsuario.productos
     }
 
+    //Busca el carrito del usuario mediante el _id del usuario
+    //luego obtiene los datos del producto que se desea agregar y lo agrega al carrito.
     async agregaProductosAlCarrito(usuario, objeto) {
 
         const carritoUsuario = await Carritos.buscarCarritoUsuarioPorId(usuario._id)
@@ -58,6 +61,8 @@ class CarritoServicio {
 
     }
 
+    //Busca el carrito del usuario mediante su _id. Luego busca el producto a eliminar dentro del carrito y lo elimina.
+
     async eliminarProductoCarritoPorId(usuario, idProd) {
 
         const carritoUsuario = await Carritos.buscarCarritoUsuarioPorId(usuario._id)
@@ -84,6 +89,7 @@ class CarritoServicio {
         return prodExistentte
     }
 
+    //busca el carrito del usuario y elimina los productos del mismo.
     async eliminarProductosCarrito(usuario){
         const Items = await Carritos.buscarCarritoUsuarioPorId(usuario)
 

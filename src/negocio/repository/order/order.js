@@ -8,7 +8,7 @@ export class order {
         this.#dao = dao
     }
 
-    
+    //Función que permite grabar la orden de compra del usuario.
     async grabarOrden(order) {
         try {
             const resul = await this.#dao.save(order.datos())
@@ -18,6 +18,7 @@ export class order {
         }
     }
 
+    //Permite listar ordenes de compras del usuario.
     async listarOrder(usuario) {
         try {
             const dtos = await this.#dao.getByIdUserOrders(usuario)

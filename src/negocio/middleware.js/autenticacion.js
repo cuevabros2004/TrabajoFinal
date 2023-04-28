@@ -7,8 +7,8 @@ function autenticacion(req, res, next) {
       res.status(401).json("Usuario no logueado")
       return "No logueado"
     }
-    //next(new ErrorDeAutenticacion()
-    // buscamos un bearer token, con formato: 'bearer gs98d7ff97fdg987df9g87ads9f8a7sd98af7'
+    
+    // Extraemos el token del authorizationHeader del header
     const token = authorizationHeader.split(' ')[1]
   
     const user = descifrarJWT(token)

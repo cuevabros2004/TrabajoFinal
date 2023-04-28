@@ -7,8 +7,7 @@
         this.#dao = dao;
     }
 
- 
-
+    //Función que permite registrar un usuario.
     async  registerUsuario(usuario){
         
         try {
@@ -20,6 +19,7 @@
 
     }
 
+    //Función que pemite buscar los datos de un usuario.
     async buscarUsuario(usuario){
         try {
             const resul = await this.#dao.buscar_usuario(usuario)
@@ -30,6 +30,7 @@
         }
     }
 
+    //Función que permite validad la contraseña del usuario.
     async validaContrasenia(usuario){
         try {
             const resul = await this.#dao.validatePassword(usuario)
