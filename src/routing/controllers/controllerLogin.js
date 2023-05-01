@@ -42,7 +42,7 @@ async function controladorRegistro(req, res) {
     res.header('authorization', cifrarJWT(objeto))
     res.status(201).json(userRegistered)
   } catch (error) {
-    res.status(201).json(error.message)
+    res.status(200).json(error.message)
   }
   
 
